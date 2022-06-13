@@ -1,0 +1,67 @@
+.Tasks {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: rgb(112, 101, 101);
+  font-family: Arial, sans-serif;
+  height: 18.5rem;
+  overflow: auto;
+}
+
+.Task > :nth-child(2):hover {
+  font-size: 1.5rem;
+} 
+
+.Task {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.9rem;
+  padding-right: 2.5rem;
+  padding-left: 1.6rem;
+  font-size: 1.3rem;
+  align-items: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  background: none;
+  border: 0;
+  font-size: 1.4rem;
+  color: rgb(112, 101, 101);
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.Check {
+  width: 1.4rem;
+  height: 1.4rem;
+  cursor: pointer;
+  margin-right: 0.8rem;
+  border: 1px solid rgb(192, 160, 160);
+  box-shadow: 0 0 1px rgb(192, 160, 160);
+  border-radius: 7%;
+}
+
+.checkAndtext {
+  display: flex;
+}
+
+input:checked + * {
+  color: #ee89e6;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+
+.checkbox {
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 0.5rem;
+}

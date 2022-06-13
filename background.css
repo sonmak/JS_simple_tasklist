@@ -1,0 +1,15 @@
+body {
+ margin: 0;
+
+}
+
+.Background {
+    position: relative;
+    width: 20vw;
+    height: 60vh;
+    background-color:  rgb(253, 242, 250);
+    margin: 0 auto;
+    margin-top: 20vh;
+}
+
+
