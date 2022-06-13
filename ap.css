@@ -1,0 +1,11 @@
+.Ap {
+    position: absolute;
+    width: 15vw;
+    height: 52.3vh;
+    background-color: rgb(250, 246, 249) ;
+    margin: 2rem, 5rem;
+    left: 2.5vw;
+    top: 4.3vh;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgb(248, 216, 248);
+}
