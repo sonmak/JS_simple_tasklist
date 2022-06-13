@@ -1,7 +1,9 @@
 function onPageLoaded() {
+
   const input = document.querySelector("input[type='text']");
   const ul = document.querySelector("ul.Tasks");
   const AddButton = document.getElementById("AddButton");
+  displayDate();
 
   function createTodo() {
     const li = document.createElement("li");
@@ -43,6 +45,22 @@ function onPageLoaded() {
   AddButton.addEventListener("click", event => {
     createTodo();
   });
+
+  function displayDate() {
+    const locale = "pl";
+    const today = new Date();
+    const weekday = today.toLocaleDateString(locale, { weekday: "long" });
+    const day = today.getDate();
+    const month = today.toLocaleDateString(locale, { month: "short" });
+    const year = today.getFullYear();
+  
+    document.getElementById("Calender").innerHTML = `
+            <div>
+              ${day}
+            </div>
+            <div>${month}</br>${year}</div>`;
+      
+  }
 }
 
 document.addEventListener("DOMContentLoaded", onPageLoaded);
